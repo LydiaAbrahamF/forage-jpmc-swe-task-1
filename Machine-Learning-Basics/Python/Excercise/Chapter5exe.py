@@ -49,7 +49,41 @@ users = ['@birukmk', '@lydiaab','@admin', '@gelilaab','@amertiab','@amanuelab']
 user = users[:]
 for user in users:
     if user == '@admin':
-        print("Hello " + user.title() + " would you like to see a status report?")
+        print("Hello " + user.title() + " would you like to see a status report?\n")
     else:
-        print("Hello " + user.title() + " thank you for logging in again.")
-#5.9 page 126/93
+        print("Hello " + user.title() + " thank you for logging in again.\n")
+#5.9
+users = ['@birukmk', '@lydiaab','@admin', '@gelilaab','@amertiab','@amanuelab']
+# users = []
+if users == []:
+    print ('we need to find some users!')
+else:
+    user = users[:]
+    for user in users:
+        if user == '@admin':
+            print("Hello " + user.title() + " would you like to see a status report?")
+        else:
+            print("Hello " + user.title() + " thank you for logging in again.")
+print('\n')
+#5.10
+currentUsers = ['Abel', 'Hanna','Kaleb', 'Isacc', 'Jesica']
+newUsers = ['Isacc', 'Jesica','Ana','Brad', 'Angle']
+newUser = newUsers [:]
+for newUser in newUsers:
+    if newUser in currentUsers:
+        print("username is already taken try another!")
+    else:
+        print("the user name " + newUser.title()+ " is available")
+#5.11
+ordinalNum = ['1' , '2', '3', '4', '5', '6', '7', '8', '9']
+num = ordinalNum [:]
+for num in ordinalNum:
+    if num == '1':
+        print(num + 'st')
+    elif num == '2':
+        print(num + 'nd')
+    elif num == '3':
+        print(num + 'rd')
+    else:
+        print (num + 'th')
+
